@@ -5,9 +5,10 @@ require 'validation/generate-code.php';
 require 'config/database.php';
 
 $event_id = (int) input_sanitize($argv[1]);
+$total_ticket = (int) input_sanitize($argv[2]);
 $sql = "";
 
-for ($i=0; $i < $argv[2]; $i++) { 
+for ($i=0; $i < $total_ticket; $i++) { 
     $sql .= "INSERT INTO tickets (event_id, ticket_code, status, created_at, updated_at) 
              VALUES (" . $event_id . ",'DTK" .  getCode() . "', 'available', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());";
 }
