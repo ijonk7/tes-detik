@@ -13,8 +13,8 @@
         Gunakan PHP CLI untuk membuat sejumlah kode ticket berdasarkan Event id, dengan contoh syntax di bawah ini.
         <div>Contoh :</div>
         <ul>
-            <li>php index.php {event_id} {total_ticket}</li>
-            <li>php index.php 2 3000</li>
+            <li>php generate-ticket.php {event_id} {total_ticket}</li>
+            <li>php generate-ticket.php 2 3000</li>
         </ul>
         <div>Dengan contoh di atas, maka akan membuat kode tiket unik sebanyak 3000 dengan event_id 2 ke dalam database.</div>      
     </li>
